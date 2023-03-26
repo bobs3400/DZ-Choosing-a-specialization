@@ -10,10 +10,14 @@ while (i < n)
        mass[i] = Console.ReadLine();
        i = i + 1;
 }
+string[] array = new string[n];
+int j = 0;
 for(i = 0; i < n; i ++)
 {
     if (mass[i].Length <= 3)
-    {
-        Console.Write((mass[i]) + ",");
+    {   
+        array[j] = mass[i];
+        Console.Write(array[j] + ", ");
+        j++;
     }
 }
