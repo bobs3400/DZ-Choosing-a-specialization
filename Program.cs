@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите длину массива");
+﻿Console.Clear();
+Console.WriteLine("Введите длину массива");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите члены массива");
 string[] mass = new string[n];
@@ -11,8 +12,8 @@ while (i < n)
 }
 for(i = 0; i < n; i ++)
 {
-       if(mass[i].Length <= 3)
-       {
-            Console.Write((mass[i]) + ",");
-       }
+    if (mass[i].Length <= 3)
+    {
+        Console.Write((mass[i]) + ",");
+    }
 }
